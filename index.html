@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Speech API Demo</title>
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+  <!-- Heading -->
+  <div class="heading" style="text-align: center; margin-top: 20px;">
+    <h2>Web Speech API Demo</h2>
+  </div>
+
+  <!-- Text to speech -->
+  <div class="container">
+    <div>
+      <h3 class="title">Text to speech</h3>
+      <textarea id="text-to-speech" placeholder="Enter text to speak" rows="5" cols="33" /></textarea><br>
+      <button class="btn btn-text-to-speech">Speak</button>
+    </div>
+  </div>
+
+  <!-- Speech to text -->
+  <div class="container">
+    <div>
+      <h3 class="title">Speech to Text</h3>
+      <p class="para">Click on the button and speak</p>
+      <button class="btn btn-speech-to-text" onclick="runSpeechRecognition()">Listen</button>
+        &nbsp;<span id="action"></span>
+      <div id="output" class="hide"></div>
+    </div>
+  </div>
+
+  <script src="./js/text-to-speech.js"></script>
+  <script src="./js/speech-to-text.js"></script>
+
+</body>
+</html>
